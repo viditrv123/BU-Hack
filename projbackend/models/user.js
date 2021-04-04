@@ -22,7 +22,7 @@ var mongoose = require('mongoose');
         type:Number,
         default: 0
     },
-    userhistory:{
+    userhistory:[{
         bp:{
             type:String,
             default:"NA"
@@ -48,10 +48,11 @@ var mongoose = require('mongoose');
             default:"NA"
         },
         doctor_remark:{
-            type:[],
+            type:String,
+            default:"NA"
             
         }
-    }
+    }]
   },{
       timestamps:true
   });

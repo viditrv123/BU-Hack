@@ -2,13 +2,13 @@ var mongoose = require('mongoose');
   var Schema = mongoose.Schema;
 
   var hospitalSchema = new Schema({
-    hospitalname:{
+    username:{
         type: String,
         required: true,
         maxlength: 32,
         trim: true
     },
-    hospitalemail:{
+    email:{
         type: String,
         required: true,
         trim: true,
